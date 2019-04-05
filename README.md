@@ -1,5 +1,5 @@
 # cs229-ML-Notes
-stanford cs229 machine learning
+stanford cs229 machine learning notes for self replay
 
 github不支持公式, chrome 安装插件正常看
 
@@ -7,7 +7,7 @@ github不支持公式, chrome 安装插件正常看
 
 
 
-week link
+### Week Link
 
 [week1 welcome to machine learning](<https://github.com/longli-ai/cs229-ML/blob/master/week1.md>)
 
