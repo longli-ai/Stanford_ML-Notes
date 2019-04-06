@@ -2,43 +2,45 @@
 
 ### Introduction
 
-机器学习定义
+##### 机器学习定义
+
 - 一个程序能从经验e中学习，并且**性能度量p**认为改善了解决t问题的性能。
 
 
 
-机器学习分类
+##### 机器学习分类
 
 - 无监督学习，有监督学习，强化学习，推荐系统
 - 将算法应用于解决实际问题中
 
 
 
-监督学习
+##### 监督学习
 
-- 定义：部分数据集已经有正确答案了，有label
+- 定义：部分数据集已经有正确答案了，有数据集标签label
+- 算法：线性回归，逻辑回归，深度学习，svm
 - 解决问题
     - 回归问题（输出连续值）
         - 我们正在尝试将输入变量映射到某个连续函数。
     - 分类问题（输出离散值）
         - 我们试图在离散输出中预测结果
 - svm能解决很多特征的问题
+    - 特征维度很高
 
 
 
-无监督学习
+##### 无监督学习
 
-- 定义：没有标签，或者是聚类算法
+- 定义：数据集没有标签，或者是聚类算法
     - 无监督学习使我们能够在很少或根本不知道我们的结果应该是什么样的情况下处理问题。
     - 在无监督学习的情况下，没有基于预测结果的反馈。
-- 使用octave节省时间
-    - [octave 安装使用](<https://wiki.octave.org/Octave_for_macOS>)
+- 算法：降维，聚类
 
 
 
 ### Model and Cost Function
 
-线性回归模型结构
+##### 线性回归模型结构
 
 - Hypothesis
     - $h_{\theta}(x)= \theta_0 + \theta_1x$
@@ -50,26 +52,24 @@
 
 
 
-hypothesis 假设函数(h)
+##### hypothesis 假设函数(h)
 
 ![model_rep](https://user-images.githubusercontent.com/41643043/55610898-82b3da00-57b6-11e9-8224-14c94a4de67e.png)
 
 
 
-损失函数/代价函数
+##### 损失函数/代价函数
 
-- 假设函数的所有样本的预测结果和实际结果之间的平均差异
-- 平方误差函数/mse
+- 定义：假设函数的所有样本的预测结果和实际结果之间的平均差异
+- 线性模型：平方误差函数/mse
     - $J(\theta_0,\theta_1) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)}-y^{(i)}))^2$
-- 根绝损失函数显示图像来寻找最佳参数
+- 根据损失函数图像来寻找最佳参数，比如二次函数的最低点
 
 
 
 ### Parameter Learning
 
-
-
-梯度下降
+##### 梯度下降
 
 - 随机一下$\theta_0,\theta_1​$
 - 通过持续更新$\theta_0,\theta_1$来最小化损失函数
@@ -79,7 +79,7 @@ hypothesis 假设函数(h)
 
 
 
-梯度下降算法- $\theta$更新
+##### 梯度下降算法- $\theta$更新
 
 repeat until covergence {
 	$\theta_j := \theta_j -\alpha \frac{\partial}{\partial \theta_j}J(\theta_0,\theta_1)$
@@ -87,23 +87,23 @@ repeat until covergence {
 
 
 
-参数更新(左，右)
+##### 参数更新(左，右)
 
 ![](https://user-images.githubusercontent.com/41643043/55611138-40d76380-57b7-11e9-9536-7c438bd3acab.png)
 
 
 
-学习率不变
+##### 学习率不变
 
 ![](https://user-images.githubusercontent.com/41643043/55611137-403ecd00-57b7-11e9-9b4d-220ac273d6c2.png)
 
-梯度下降更新
+##### 梯度下降更新
 
 ![](https://user-images.githubusercontent.com/41643043/55611139-40d76380-57b7-11e9-85d0-97a9e5271f5a.png)
 
 
 
-Batch Gradient Descent
+#### Batch Gradient Descent
 
 - 训练时候，使用整个样本
 - min-batch，使用部分样本
