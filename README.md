@@ -1,5 +1,7 @@
 # Stanford Machine Learning Notes
-stanford machine learning notes for myself replay
+[课程地址](https://www.coursera.org/learn/machine-learning/home/week/2)
+
+Stanford machine learning notes for myself replay
 
 ## 插件
 github不支持公式, chrome 安装插件正常看
