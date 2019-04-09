@@ -2,7 +2,9 @@
 
 
 
-### Multivariate Linear Regression
+### 多项式线性回归
+
+
 
 #### Multiple Features 多元特征
 
@@ -51,7 +53,7 @@ $J(\theta)-Iterations$曲线
 
 
 
-### Computing Parameters Analytically
+### 计算参数分析
 
 #### 正规方程 Normal Equation
 - 定义：$\theta = (X^T X)^{-1}X^Ty$
@@ -91,9 +93,7 @@ save hello.dat v; # 保存v到hello.dat
 A = [1 2;3 4; 5 6]
 save hello.txt -ascii %save as text # %是注释
 size(A) # shape of matrix A
-
 length(A) # 矩阵的长度
-
 ```
 
 
