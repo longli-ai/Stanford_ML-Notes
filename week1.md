@@ -1,10 +1,10 @@
-##  Week 1
+##  Week 1 Stanford Machine Learning
 
 ### Introduction
 
 #### 机器学习定义
 
-- 一个程序能从经验e中学习，并且**性能度量p**认为改善了解决t问题的性能。
+- 一个程序能从经验E中学习，并且**性能度量P**认为改善了解决T问题的性能。
 
 
 
@@ -37,10 +37,11 @@
 - 算法：降维，聚类
 
 
-
-### Model and Cost Function
+### 单变量的线性回归
 
 #### 线性回归模型结构
+
+![model_rep](https://user-images.githubusercontent.com/41643043/55610898-82b3da00-57b6-11e9-8224-14c94a4de67e.png)
 
 - Hypothesis
     - $h_{\theta}(x)= \theta_0 + \theta_1x$
@@ -51,13 +52,6 @@
 - Goal: $minimize_{\theta_0,\theta_1}  J(\theta_0,\theta_1)$
 
 
-
-#### hypothesis 假设函数(h)
-
-![model_rep](https://user-images.githubusercontent.com/41643043/55610898-82b3da00-57b6-11e9-8224-14c94a4de67e.png)
-
-
-
 #### 损失函数/代价函数
 
 - 定义：假设函数的所有样本的预测结果和实际结果之间的平均差异
@@ -65,9 +59,6 @@
     - $J(\theta_0,\theta_1) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2$
 - 根据损失函数图像来寻找最佳参数，比如二次函数的最低点
 
-
-
-### Parameter Learning
 
 #### 梯度下降
 
@@ -110,9 +101,7 @@ repeat until covergence {
 
 
 
-### Linear Algebra Review
-
-
+### 线性代数
 
 matrix大小
 
@@ -129,21 +118,20 @@ vector
 - prediction = DataMatrix * Parameters
 
 
-
-单位矩阵 Identical matrix
+#### 单位矩阵 Identical matrix
 
 - 对角1，其他位置位0
 - $A I = I A = A $(服从结合律)
 
 
 
-逆矩阵 matrix inverse
+#### 逆矩阵 matrix inverse
 
 - $AA^{-1} = A^{-1}A = I$
 - 奇异军阵/退化矩阵 
     - 定义：无逆矩阵
 
-转置矩阵 matrix transpose
+#### 转置矩阵 matrix transpose
 
 - 右手掌向上，手掌水平于胸，指尖向左
 - 翻手，手掌向下，指尖垂直于胸向前
