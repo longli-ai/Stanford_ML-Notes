@@ -11,7 +11,9 @@ github不支持公式, chrome 安装插件正常看
 
 
 ## Link
-### [week1 Introduction](https://github.com/longli-ai/Stanford_Machine_Learning-Notes/blob/master/week1.md)
+### [week1 Introdution](https://github.com/longli-ai/Stanford_Machine_Learning-Notes/blob/master/week1.md)
 
 ### [week2 Linear Regression with Multiple Variables](https://github.com/longli-ai/Stanford_Machine_Learning-Notes/blob/master/week2.md)
 
+
+### [week3 Logistic Regression](https://github.com/longli-ai/Stanford_Machine_Learning-Notes/blob/master/week3.md)
