@@ -68,11 +68,9 @@ XNOR实例实现
     - $y = g(-10 + 20x_1+20x_2);\ x_1,x_2\in \{0,1\}$ 
 - NOT实现
     - $y = g(-10 + 20x_1);\ x_1\in \{0,1\}$ 
-- XNOR实现 $(NOT\ x_1)\ AND\ (NOT\ x_2)$
+- XNOR实现: $(NOT\ x_1)\ AND\ (NOT\ x_2)$
     - $y = g(10 - 20x_1 - 20x_2);\ x_1,x_2\in \{0,1\}$ 
-
-XOR实例实现
-    - $ (x_1\ AND\ x_2)\ OR\ (x_1\ XNOR\ x_2)$
+- XOR实例实现: $ (x_1\ AND\ x_2)\ OR\ (x_1\ XNOR\ x_2)$
 
 
 多分类
