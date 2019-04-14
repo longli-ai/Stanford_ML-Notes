@@ -1,5 +1,5 @@
 # Stanford Machine Learning Notes
-[课程地址](https://www.coursera.org/learn/machine-learning/home/week/2)
+吴大师的机器学习 [课程地址](https://www.coursera.org/learn/machine-learning/home/week/2)
 
 Stanford machine learning notes for myself replay
 
