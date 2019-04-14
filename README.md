@@ -1,5 +1,5 @@
 # Stanford Machine Learning Notes
-吴大师的机器学习 [课程地址](https://www.coursera.org/learn/machine-learning/home/week/2)
+吴大师的机器学习 [课程地址](https://www.coursera.org/learn/machine-learning/home/week/)
 
 Stanford machine learning notes for myself replay
 
@@ -15,5 +15,6 @@ github不支持公式, chrome 安装插件正常看
 
 ### [week2 Linear Regression with Multiple Variables](https://github.com/longli-ai/Stanford_Machine_Learning-Notes/blob/master/week2.md)
 
-
 ### [week3 Logistic Regression](https://github.com/longli-ai/Stanford_Machine_Learning-Notes/blob/master/week3.md)
+
+### [week4 Neural Network Representation](https://github.com/longli-ai/Stanford_Machine_Learning-Notes/blob/master/week4.md)
