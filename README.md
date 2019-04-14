@@ -17,3 +17,11 @@ github不支持公式, chrome 安装插件正常看
 
 
 ### [week3 Logistic Regression](https://github.com/longli-ai/Stanford_Machine_Learning-Notes/blob/master/week3.md)
+
+
+### [week4 Logistic Regression](https://github.com/longli-ai/Stanford_Machine_Learning-Notes/blob/master/week5.md)
+
+
+
+
+### [week5 Logistic Regression](https://github.com/longli-ai/Stanford_Machine_Learning-Notes/blob/master/week5.md)
