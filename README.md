@@ -4,9 +4,9 @@
 Stanford machine learning notes for myself replay
 
 ## 插件
-github不支持公式, chrome 安装插件正常看
+github的markdown不支持公式, 安装下面的 chrome 安装插件，可以正常看markdown的公式
 
-插件地址  [github with mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
+[github with mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
 
 
 
