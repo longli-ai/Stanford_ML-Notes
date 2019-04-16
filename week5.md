@@ -14,11 +14,37 @@
 
 
 #### 反向传播
+为什么有反向传播
+- “反向传播”是用于最小化我们的成本函数的神经网络术语，就像我们在逻辑和线性回归中使用梯度下降一样。
 
 ##### 误差定义 $\delta_j^{(l)}$: "error" of node $j$ in layer $l$.
 
 ![](https://user-images.githubusercontent.com/41643043/56089754-55f47680-5eca-11e9-9a5b-2100a91f2070.png)
 
 $\delta^{(3)}$不清楚，进一步学习
+
+
+
+##### 梯度检查
+为什么：反向传播有一些bug，并且算法都不是运行的很好
+
+双侧差分
+- 近似等于
+
+单侧差分
+
+$\frac{\partial}{\partial \theta_i}$
+
+octave实现梯度检查算法
+
+梯度检查notes
+![](https://user-images.githubusercontent.com/41643043/56102305-cf3da900-5f5e-11e9-8429-57e078b7a6d2.png)
+
+
+
+##### 随机初始化
+
+initialTheta全0
+
 
 
