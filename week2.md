@@ -1,24 +1,48 @@
 ## Week2
 
+### 迷惑
+
+[$h(x)= theta'*x 和 h(x) = X*theta 区别$](https://www.coursera.org/learn/machine-learning/supplement/SFKpu/programming-tips-from-mentors)
+
+课程的mentor给了一些建议，后面写作业时候，经常混淆，需要搞明白
+
+课程中采用的都是列向量，需要搞明白含义 $theta, x, X$
+$h(x) = theta'*x$
+- x代表单样本
+    - x的维度是$n*1$
+    - h是标量
+
+$h(x) = X*theta$
+- X作为所有训练样本的矩阵，每个样本作为一行，特征作为列
+    - X的维度是$m*n$，m是样本数量，n是特征维度
+    - h的维度是$m*1$
+
+&nbsp;
 
 ### 多项式线性回归
 
 
 
-#### Multiple Features 多元特征
+#### 多维特征
 
-- 假设函数 $h_\theta(x) = \theta_0x_0+\theta_1x_1+…+\theta_nx_n$
+假设函数 
+- 常规写法 
+$$h_\theta(x) = \theta_0x_0+\theta_1x_1+…+\theta_nx_n$$
+$$h_\theta(x) = \theta^Tx^{(i)};\ i = 1..m$$
 
-- $h_\theta(x) = \theta^TX$
-- $\theta$是细数，表示权重，一般不要讲x放在前面。
+- 矢量写法 
+$$h_\theta(x) = X\theta$$
 
 
+代价函数
+-  常规写法 $$J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2$$
+-  矢量写法 $$J(\theta) = \frac{1}{2m}(X\theta-y)^T(X\theta-y)$$
 
 #### 多元参数的梯度下降
 多元参数和week1的梯度下降一样，将$x_0 = 1$带入week1即可
-repeat until covergence {
-    $\theta_j := \theta_j -\alpha \frac{\partial}{\partial \theta_j}J(\theta_j)$ $for\ j := 0...n$
-}
+$repeat\ until\ covergence\ \{$
+    $\theta_j := \theta_j -\alpha \frac{\partial}{\partial \theta_j}J(\theta_j); for\ j\ := 0...n$
+$\}$
 
 
 #### 梯度下降实战1-Feature Scaling
@@ -62,15 +86,15 @@ $J(\theta)-Iterations$曲线
 
 ![](https://user-images.githubusercontent.com/41643043/55677705-37690b00-591f-11e9-8a46-e1bf57fd3696.png)
 
-#### Normal Equation Noninvertibility
+#### 正规方程不可逆
 正规方程$(X^T X)^{-1}$不可逆，怎么办
 - 删除冗余的特征（线性依赖的特征）
 - 太多特征（样本数量小于特征数量）
     - 删除一些特征，或者用正则化
 
 octave中正规方程$(X^T X)^{-1}$不可逆
-- inv()没有解
-- pinv()可以求一个伪逆矩阵，所以常用pinv()
+- $inv()$没有解
+- $pinv()$可以求一个伪逆矩阵，得到一个近似解，所以常用$pinv()$
 
 
 ### Octave/Matlab Tutorial
@@ -120,22 +144,11 @@ sum(A,2) # sum row
 
 
 ### 编程
-- octave的使用，作业题目是手写 **梯度下降**，值得注意的区分就是$X'*\theta$还是$\theta*X$
+- octave的使用，作业题目是**梯度下降，参数更新**
 - 切记：octave与其他的语言不同，采用1-n到多少，其他语言基本都是0-n，比如矩阵A[:,1:2]代表第1列，第2列
 
 
-### 迷糊
 
-课程的mentor给了一些建议，后面第4周写作业时候，经常混淆
-
-[$theta'*x 和 X*theta 区别$](https://www.coursera.org/learn/machine-learning/supplement/SFKpu/programming-tips-from-mentors)
-
-课程中采用的都是列向量，$theta, x, X$
-$theta'*x$
-- x代表单样本
-
-$X*theta$
-- 全样本的乘法
 
 
 
