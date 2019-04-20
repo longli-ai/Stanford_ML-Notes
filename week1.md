@@ -41,7 +41,7 @@
 
 #### 线性回归模型结构
 
-![model_rep](https://user-images.githubusercontent.com/41643043/55610898-82b3da00-57b6-11e9-8224-14c94a4de67e.png)
+![model_rep](https://user-images.githubusercontent.com/41643043/56453801-1c17ea00-637a-11e9-9110-eaeb81097582.png)
 
 - Hypothesis
     - $h_{\theta}(x)= \theta_0 + \theta_1x$
@@ -66,16 +66,15 @@
 - 通过持续更新$\theta_0,\theta_1$来最小化损失函数
 - **同时间**更新$\theta_0,\theta_1$
 
-![pm_update](https://user-images.githubusercontent.com/41643043/55610899-82b3da00-57b6-11e9-9453-92050b531d6d.png)
+![pm_update](https://user-images.githubusercontent.com/41643043/56453802-1cb08080-637a-11e9-8691-718ce8483908.png)
 
 
 
-#### 梯度下降算法- $\theta$更新
+#### 梯度下降算法 $\theta$ 更新
 
-repeat until covergence {
+$repeat\ until\ covergence\ \{$
 	$\theta_j := \theta_j -\alpha \frac{\partial}{\partial \theta_j}J(\theta_0,\theta_1)$
-}
-
+$\}$
 
 
 #### 参数更新(左，右)
