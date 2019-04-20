@@ -1,7 +1,6 @@
 ## Week2
 
 
-
 ### 多项式线性回归
 
 
@@ -123,3 +122,22 @@ sum(A,2) # sum row
 ### 编程
 - octave的使用，作业题目是手写 **梯度下降**，值得注意的区分就是$X'*\theta$还是$\theta*X$
 - 切记：octave与其他的语言不同，采用1-n到多少，其他语言基本都是0-n，比如矩阵A[:,1:2]代表第1列，第2列
+
+
+### 迷糊
+
+课程的mentor给了一些建议，后面第4周写作业时候，经常混淆
+
+[$theta'*x 和 X*theta 区别$](https://www.coursera.org/learn/machine-learning/supplement/SFKpu/programming-tips-from-mentors)
+
+课程中采用的都是列向量，$theta, x, X$
+$theta'*x$
+- x代表单样本
+
+$X*theta$
+- 全样本的乘法
+
+
+
+
+
