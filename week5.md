@@ -1,6 +1,6 @@
-## Week5
+# Week5
 
-### 挣扎
+## 挣扎
 这一章有些挣扎，尤其在看反向传播的时候，公式$\delta^{(3)}$如何得到的，完全一头雾水，有些要放弃的感觉，每天也不知道在干啥，晚上完全看不进去，如果搞不明白，可以不用出去了。吴老师的我基本没看懂，看了下面的才明白了。
 
 补充学习B站3Blue1Brown
@@ -11,24 +11,38 @@
 ![](https://user-images.githubusercontent.com/41643043/56329121-8e3ed200-61b4-11e9-8ccf-a4f6beb3266c.png)
 
 
+&nbsp;
 
-### 神经网络：学习
+## 神经网络：学习
 
 分类问题，分类个数K
-- $K = 2$，用一个神经元作为output layer即可
-- $K \geq 3$，用K个神经元作为output layer
+- $K = 2$，用一个神经元当输出层
+- $K \geq 3$，用K个神经元做输出层
 
 神经网络的log损失函数
-- $J(\Theta) = -\frac{1}{m}[\sum^m_{i=1}\sum^K_{k=1} y^{(i)}_klog((h_\Theta(x^{(i)}))_k) + (1-y^{(i)}_k)log(1-(h_\Theta(x^{(i)}))_k)] + \frac{\lambda}{2m}\sum^{L-1}_{l=1}\sum^{s_l}_{i=1}\sum^{s_{l+1}}_{j=1}(\Theta^{(l)}_{ji})^2$
-- 注意正则化怎么加起来的
-- 注意$K \geq 3$和二分类的区别
+$$J(\Theta) = -\frac{1}{m}[\sum^m_{i=1}\sum^K_{k=1} (y^{(i)}_klog((h_\Theta(x^{(i)}))_k) + (1-y^{(i)}_k)log(1-(h_\Theta(x^{(i)}))_k))] + \frac{\lambda}{2m}\sum^{L-1}_{l=1}\sum^{s_l}_{i=1}\sum^{s_{l+1}}_{j=1}(\Theta^{(l)}_{ji})^2$$
+
+&nbsp;
+**代价函数项**
+$$\sum^m_{i=1}\sum^K_{k=1} (y^{(i)}_klog((h_\Theta(x^{(i)}))_k) + (1-y^{(i)}_k)log(1-(h_\Theta(x^{(i)}))_k))$$
+
+- K代表多分类，这时候的y其实是矢量，所以计算损失函数的时候，需要加起来
+
+
+**正则化项** 
+$$\sum^{L-1}_{l=1}\sum^{s_l}_{i=1}\sum^{s_{l+1}}_{j=1}(\Theta^{(l)}_{ji})^2$$
+
+- 逻辑回归是神经网络的特殊情况
+    - 就是没有隐藏层，所以神经网络在定义上加入了必须有隐藏层
+    - 并且只有一个节点输出(二分类)，($l \equiv 1; j \equiv 2$)，神经网络有多层权重($l$)，有交叉权重($j!=1$)
+- $\Theta_{ji}$是后一层$j$和前一层$i$之间的交叉权重，所以两个$\sum$加起来了两层之间所有的交叉权重
 
 &nbsp;
 #### 反向传播
 为什么有反向传播
 - “反向传播”是用于最小化我们的成本函数的神经网络术语，就像我们在逻辑和线性回归中使用梯度下降一样。
 
-##### 误差定义 $\delta_j^{(l)}$: "error" of node $j$ in layer $l$.
+##### 节点误差定义 $\delta_j^{(l)}$: "error" of node $j$ in layer $l$.
 
 ![](https://user-images.githubusercontent.com/41643043/56089754-55f47680-5eca-11e9-9a5b-2100a91f2070.png)
 
