@@ -25,8 +25,9 @@ github的markdown不支持公式, 安装下面的 chrome 安装插件，可以�
 ### [week5 Neural Networks: Learning](https://github.com/rubust-ai/Stanford_Machine_Learning-Notes/blob/master/week5.md)
 
 
-
 ### [week6 Advice for Applying Machine Learning](https://github.com/rubust-ai/Stanford_Machine_Learning-Notes/blob/master/week6.md)
 
 
 ### [week7 Support Vector Machines](https://github.com/rubust-ai/Stanford_Machine_Learning-Notes/blob/master/week7.md)
+
+
