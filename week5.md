@@ -1,11 +1,16 @@
 # Week5
 
-## 挣扎
+## 补充
 这一章有些挣扎，尤其在看反向传播的时候，公式$\delta^{(3)}$如何得到的，完全一头雾水，有些要放弃的感觉，每天也不知道在干啥，晚上完全看不进去，如果搞不明白，可以不用出去了。吴老师的我基本没看懂，看了下面的才明白了。
 
 补充学习B站3Blue1Brown
 - [深度学习之反向传播算法 上](https://www.bilibili.com/video/av16577449)
 - [深度学习之反向传播算法 下 公式推导](https://www.bilibili.com/video/av16577449/?p=2)
+
+随机梯度下降
+- mini-batch GD/SGD
+
+
 
 公式
 ![](https://user-images.githubusercontent.com/41643043/56329121-8e3ed200-61b4-11e9-8ccf-a4f6beb3266c.png)
@@ -114,6 +119,18 @@ octave实现梯度检查算法
 可视化技术
 - 人根据实时路况边缘，进行左转或者右转
     - 实时路况当作输入图片，左转和右转的幅度作为y
+
+
+
+
+
+### 反向传播补充
+
+
+反向传播节点误差定义 $\delta_j^{(l)}$: "error" of node $j$ in layer $l$.
+$\delta_j^{(l)}$ is the backpropagated error calculated at $z_j^{(l)}$
+
+$$\delta_j^{(l)} = \frac{\partial J(\Theta)}{\partial z_j^{(l)}}$$
 
 
 
