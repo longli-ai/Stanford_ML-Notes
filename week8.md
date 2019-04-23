@@ -77,6 +77,7 @@ K-means存的问题
 分析数据相关性，这算进行降维？
 
 **主成分分析PCA**
+
 聚类常用的是k-means算法，降维常用PCA
 
 定义
@@ -87,19 +88,84 @@ PCA和线性回归
 - 下图左边是线性回归，右边是pca(没有标签y)
 - 两者的误差求法也不一样
 
+- pca于线性模型的区别
+    - pca是最小化投影的距离(点垂直于pca的平面)，x1，x2是平等的，没有predict只说
+    - 线性模型是最小化predict和y之间最小化
+    
 ![](https://user-images.githubusercontent.com/41643043/56542952-99be3e80-65a2-11e9-933c-9952964e5628.png)
 
 
-PCA算法流程
+**PCA算法**
 
 数据预处理
 - 特征幅度缩放和归一化
 
+![](https://user-images.githubusercontent.com/41643043/56543898-73e66900-65a5-11e9-9cb3-50e94c640819.png)
+
+
 协方差矩阵
 
+![](https://user-images.githubusercontent.com/41643043/56543903-76e15980-65a5-11e9-91a3-323e262fd64c.png)
+
+奇异
+![](https://user-images.githubusercontent.com/41643043/56543904-76e15980-65a5-11e9-937a-107bb47cf526.png)
 
 
 
+
+
+
+
+伪代码流程
+![](https://user-images.githubusercontent.com/41643043/56543905-7779f000-65a5-11e9-8f1e-538c410f7936.png)
+
+
+
+
+
+quiz
+写octave中遇到
+![](https://user-images.githubusercontent.com/41643043/56543909-7779f000-65a5-11e9-8503-062e6c7f440c.png)
+
+
+
+
+
+
+PCA压缩数据维度到原始数据维度
+
+
+怎样选择k，**肯定是要选择最小的k**
+
+平均平方投影最小化
+$$A=\frac{1}{m} \sum^m_{i=1} ||x^{(i)}-x^{(i)}_{approx}||^2$$
+数据总变差
+$$B =\frac{1}{m} \sum^m_{i=1}||x^{(i)}||^2$$
+
+评判标准
+$$\frac{A}{B} \leq 0.01$$
+
+99%的差异性保存
+
+差异性怎么理解？
+
+
+
+&nbsp;
+
+#### 伪代码选择k算法
+![](https://user-images.githubusercontent.com/41643043/56545338-de99a380-65a9-11e9-923b-0e8887fe9644.png)
+
+![](https://user-images.githubusercontent.com/41643043/56545339-df323a00-65a9-11e9-881d-aef0b7d92fff.png)
+
+
+- pca提高监督学习速度
+
+PCA使用的误区
+- 不要用pca去预防overfitting
+    - pca降维后，特征更少了，不利于拟合，还是老实去用正则化
+- 设置ml系统，直接使用pca
+    - 不建议使用pca，建议使用原始数据后，如果用了原始没用，才能建议去用pca
 
 
 
