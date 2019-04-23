@@ -1,4 +1,5 @@
-# Stanford Machine Learning Notes
+# Machine Learning Notes
+
 课程地址 [CS229: Stanford Machine Learning](https://www.coursera.org/learn/machine-learning/home/week)
 
 
@@ -8,8 +9,7 @@ github的markdown不支持公式, 安装下面的 chrome 安装插件，可以�
 [github with mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
 
 
-
-## Link
+## Links
 
 [week1 Introduction](https://github.com/rubust-ai/Stanford_Machine_Learning-Notes/blob/master/week1.md)
 
