@@ -1,7 +1,6 @@
 # Stanford Machine Learning Notes
-[课程地址](https://www.coursera.org/learn/machine-learning/home/week)
+课程地址 [CS229: Stanford Machine Learning](https://www.coursera.org/learn/machine-learning/home/week)
 
-Stanford machine learning notes for myself replay
 
 ## 插件
 github的markdown不支持公式, 安装下面的 chrome 安装插件，可以正常看markdown的公式
