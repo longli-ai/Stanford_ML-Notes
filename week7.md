@@ -8,10 +8,13 @@
 - 开始优化hinge-lost，求最小化
 
 假设函数
-$$h_\theta(x) = \left. \{\begin{array}{cc} 
-		1, & \theta^Tx\geq 0\\ 
-		0, & other 
-\end{array}\right. \tag{2}$$
+$$h_\theta(x) = 
+\left\{
+\begin{array}{cc} 
+		1, & \theta^Tx\geq 0;\\
+		0, & other;\\
+\end{array}
+\right. \tag{2}$$
 
 大距离分类器 分类算法
 - 保持一个安全距离
