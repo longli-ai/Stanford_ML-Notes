@@ -9,7 +9,7 @@
 
 假设函数
 $$h_\theta(x) = 
-\left \{
+\left. \{
 \begin{array}{cc} 
 		1, & \theta^Tx\geq 0;\\
 		0, & other;\\
