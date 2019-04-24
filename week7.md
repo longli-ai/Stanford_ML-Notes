@@ -17,16 +17,6 @@ $$h_\theta(x) =
 \right. \tag{2}$$
 
 
-\documentclass{article}
-\usepackage{amsmath}
-\begin{document}
-  \begin{equation}
-    o=g(h)=\begin{cases}
-              1 & \text{if $ h < 0 $}\\
-              0 & \text{if $ h \le 0$}
-\end{cases}
-\end{equation}
-\end{document}
 
 
 大距离分类器 分类算法
