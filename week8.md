@@ -6,10 +6,10 @@ github 的 markdown 不支持公式, 安装下面的 chrome 安装插件，可�
 
 [github with mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
 
-### 无监督学习
+## 8.1 无监督学习
 
 
-#### 聚类
+### 8.1.1 聚类
 - 把没有标签的数据分成组，寻找数据的结构。
 - 常用算法有k-means
 
@@ -65,7 +65,7 @@ K-means存的问题
 
 
 
-#### 降维
+### 8.1.2 降维
 
 数据压缩
 - 直线$2D\ to\ 1D$，平面$3D\ to\ 2D$
