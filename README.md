@@ -1,6 +1,8 @@
 # Machine Learning Notes
 
-课程地址 [CS229: Stanford Machine Learning](https://www.coursera.org/learn/machine-learning/home/week)
+吴恩达大师的课程 [CS229: Stanford Machine Learning](https://www.coursera.org/learn/machine-learning/home/week)
+
+
 
 
 ## 插件
