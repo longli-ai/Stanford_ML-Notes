@@ -1,6 +1,6 @@
-## Week7
+# Week7
 
-### Support Vector Machines
+## 7.1 Support Vector Machines
 
 
 优化目标
@@ -9,12 +9,25 @@
 
 假设函数
 $$h_\theta(x) = 
-\left\{
+\left \{
 \begin{array}{cc} 
 		1, & \theta^Tx\geq 0;\\
 		0, & other;\\
 \end{array}
 \right. \tag{2}$$
+
+
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+  \begin{equation}
+    o=g(h)=\begin{cases}
+              1 & \text{if $ h < 0 $}\\
+              0 & \text{if $ h \le 0$}
+\end{cases}
+\end{equation}
+\end{document}
+
 
 大距离分类器 分类算法
 - 保持一个安全距离
