@@ -97,13 +97,23 @@ $\Sigma$协方差矩阵
 ![](https://user-images.githubusercontent.com/41643043/56625643-d8222f00-6670-11e9-927b-d29f39739e58.png)
 
 异常检测采用多元高斯分布
-- 
 
+原始的高斯分布，对应的多元高斯分布
 
+![](https://user-images.githubusercontent.com/41643043/56843988-4e29ce80-68db-11e9-8c42-2b112886226d.png)
+
+使用多元高斯分布，如果不可解奇异矩阵
+- 样本m < 特征n
+- 冗余的特征，比如两个特征相等
+
+![](https://user-images.githubusercontent.com/41643043/56844053-d9f02a80-68dc-11e9-82cb-8e08d1343a46.png)
 
 
 
 ## 9.2 推荐系统
+
+
+
 
 
 
