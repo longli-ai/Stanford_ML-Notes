@@ -84,7 +84,7 @@ K-means存的问题
 定义
 - 寻找低的新维度，使样本在新维度投影误差(projection error)只和最小化，不是投影距离(projection length)。
 
-PCA和线性回归
+PCA和线性*回归*
 - PCA不是线性回归
 - 下图左边是线性回归，右边是pca(没有标签y)
 - 两者的误差求法也不一样
