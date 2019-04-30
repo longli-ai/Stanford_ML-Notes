@@ -68,6 +68,9 @@ Photo OCR 流水线 pipeline
 - 图片增加纯随机的噪声，比如高斯随机噪声没有作用
 
 
+关于数据扩增
+- 扩增之前，确保模型的低偏差，不要欠拟合
+
 ![](https://user-images.githubusercontent.com/41643043/56887159-68160d80-6aa3-11e9-9b72-27c433b18da1.png)
 
 
