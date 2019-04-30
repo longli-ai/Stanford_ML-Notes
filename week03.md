@@ -1,7 +1,55 @@
-## Week3 逻辑回归和正则化
+# Week3 逻辑回归和正则化
+
+## 补充 矩阵方程
+
+课程中，所有向量表示都是列向量，比如单样本的特征$x^{(i)}, \theta$
+$$h_{\theta}(x)=g(\theta^T*x)$$
 
 
-### 逻辑回归
+**假设函数**
+
+$$h(\theta)=g(X*\theta);$$
+
+**损失函数**
+
+$$J(\theta)= \frac{1}{m}[y'*log(h(\theta))+(1-y)'*log(1-h(\theta))]; $$
+
+
+### 比较两种假设函数
+
+**假设函数$h_{\theta}(x)$**
+- 在特定$\theta$下，计算单样本$x$的预测结果
+    - 输出$y$是标量，这时候计算输出的，就只能是 $\theta^T*x$ 或者 $x^T*\theta$
+    - 由于不是神经网络，所以此时只能做二分类
+- 此时$h_{\theta}(x)$输出结果为标量
+
+&nbsp;
+**假设函数$h(\theta)$**
+
+$$h(\theta)=g(X*\theta);$$
+
+- 表示全样本的情况下，$\theta$的方程，求全样本的向量化$y$的方程，此时$X$代表已知全样本矩阵。
+- 此时$h(\theta)$输出结果为向量化$y$
+
+**损失函数偏导的意义**
+
+$$\frac{\partial J(\theta)}{\partial\theta_j}
+= \frac{1}{m} \sum^m_{i=1} (h_\theta(x^{(i)}) - y^{(i)})x^{(i)}_j$$
+
+- 通过观察公式，可以发现对整个样本的误差，乘以自身的某个特征值，然后求平均
+- 就能得到需要对某个特征的权重需要更新的大小
+
+**损失函数偏导数**
+
+- 通过上面的公式观察，可以得到下面公式
+
+$$\frac{\partial J(\theta)}{\partial\theta_j}
+= \frac{1}{m} X(:,j)'*(h(\theta)-y) \tag{1}$$
+
+$$\frac{\partial J(\theta)}{\partial\theta}
+= \frac{1}{m} X'*(h(\theta)-y) \tag{2}$$
+
+## 逻辑回归
 
 #### 分类算法和表征
 
@@ -192,5 +240,7 @@ $\lambda$太大可能导致 underfitting
 
 正则化的梯度下降
 ![lr_gd](https://user-images.githubusercontent.com/41643043/55692854-3814a680-59de-11e9-9f4b-1aa0e2ec9b65.png)
+
+
 
 
