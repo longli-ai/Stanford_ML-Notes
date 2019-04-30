@@ -1,5 +1,11 @@
 ## Week11
 
+### GitHub公式显示插件
+Github 的 markdown 不支持数学公式, 安装下面的 chrome 安装 mathjax 插件，可以正常看 markdown 文中的数学公式，当然前提是你需要过墙，才能安装。
+
+
+[Github with mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
+
 
 ### 11.1 照片光学字符识别 Photo OCR
 
