@@ -97,47 +97,44 @@ octave中正规方程$(X^T X)^{-1}$不可逆
 - $pinv()$可以求一个伪逆矩阵，得到一个近似解，所以常用$pinv()$
 
 
-### Octave/Matlab Tutorial
+### Octave简明教程
 
-```octave
-eye # 生成单位矩阵
-format long #长型
-format short # 短型
+```matlab
+eye % 生成单位矩阵
+format long % 长型
+format short %短型
 
-load featuresX.dat # 生成featruesX
-load priceY.dat # 生成priceY
-who # 查看所有已经定义的变量名字
-whos # 详细查看已经定义的变量名
+load featuresX.dat % 生成featruesX
+load priceY.dat % 生成priceY
+who % 查看所有已经定义的变量名字
+whos % 详细查看已经定义的变量名
 
-clear featuresX # 清除变量
+clear featuresX % 清除变量
 v = priceY(1:10) 
-save hello.dat v; # 保存v到hello.dat
+save hello.dat v; % 保存v到hello.dat
 
 A = [1 2;3 4; 5 6]
-save hello.txt -ascii %save as text # %是注释
-size(A) # shape of matrix A
-length(A) # 矩阵的长度
-```
+save hello.txt -ascii %save as text 
+size(A) %shape of matrix A
+length(A) %矩阵的长度
 
+A * C % 点乘
+A .* B % A, B必须一样大小的矩阵，结果是内部元素相乘
+A .^ 2 % A的所有元素平方一下
+A^2 % A * A
+1 ./ A % A中的元素倒数
+A' %  A.T 转置
 
-```octave
-A * C # 点乘
-A .* B # A, B必须一样大小的矩阵，结果是内部元素相乘
-A .^ 2 # A的所有元素平方一下
-A^2 # A * A
-1 ./ A # A中的元素倒数
-A' #  A.T 转置
+inv(A) % A的逆矩阵正解，有可能无解
+pinv(A) % A的逆矩阵近似解，有解出解，无解近似
 
-inv(A) # A的逆矩阵正解，有可能无解
-pinv(A) # A的逆矩阵近似解，有解出解，无解近似
-
-A < 3 # 输出真值表，类似pandas
-max(A,[],1) #  筛选column 最大元素
-max(A,[],2) # 筛选row 最大元素
-max(A) # 筛选column 最大元素
-max(max(A)) # 求矩阵最大
-sum(A,1) # sum column
-sum(A,2) # sum row
+A < 3 % 输出真值表，类似pandas
+max(A,[],1) % 筛选column 最大元素
+max(A,[],2) % 筛选row 最大元素
+max(A) % 筛选column 最大元素
+max(max(A)) %求矩阵最大
+sum(A,1)  %  sum column
+sum(A,2) % sum row
 
 ```
 
