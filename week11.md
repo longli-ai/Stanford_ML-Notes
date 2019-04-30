@@ -108,4 +108,5 @@ pipeline上的组块分析
 
 ![](https://user-images.githubusercontent.com/41643043/56889535-2e480580-6aa9-11e9-8641-7c2b02047e8e.png)
 
-![](https://user-images.githubusercontent.com/41643043/56889538-30aa5f80-6aa9-11e9-929d-81fea0f4795a.png)
+
+感谢吴恩达老师，上了这么多年学，也没见过像吴恩达老师讲课讲的这么好的。
