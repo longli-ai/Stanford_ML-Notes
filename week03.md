@@ -2,7 +2,9 @@
 
 ## 补充 矩阵方程
 
-课程中，所有向量表示都是列向量，比如单样本的特征$x^{(i)}, \theta$
+不弄懂下面补充内容，基本没法做编程作业。
+
+本课程中，所有向量表示都是列向量，比如单样本的特征$x^{(i)}, \theta$
 $$h_{\theta}(x)=g(\theta^T*x)$$
 
 
@@ -13,6 +15,9 @@ $$h(\theta)=g(X*\theta);$$
 **损失函数**
 
 $$J(\theta)= \frac{1}{m}[y'*log(h(\theta))+(1-y)'*log(1-h(\theta))]; $$
+
+
+
 
 
 ### 比较两种假设函数
@@ -33,8 +38,10 @@ $$h(\theta)=g(X*\theta);$$
 
 **损失函数偏导的意义**
 
+公式推导下面方程！！！！！
+
 $$\frac{\partial J(\theta)}{\partial\theta_j}
-= \frac{1}{m} \sum^m_{i=1} (h_\theta(x^{(i)}) - y^{(i)})x^{(i)}_j$$
+= \frac{1}{m} \sum^m_{i=1} (h_\theta(x^{(i)}) - y^{(i)})x^{(i)}_j \tag{1}$$
 
 - 通过观察公式，可以发现对整个样本的误差，乘以自身的某个特征值，然后求平均
 - 就能得到需要对某个特征的权重需要更新的大小
@@ -44,10 +51,42 @@ $$\frac{\partial J(\theta)}{\partial\theta_j}
 - 通过上面的公式观察，可以得到下面公式
 
 $$\frac{\partial J(\theta)}{\partial\theta_j}
-= \frac{1}{m} X(:,j)'*(h(\theta)-y) \tag{1}$$
+= \frac{1}{m} X(:,j)'*(h(\theta)-y) \tag{2}$$
 
 $$\frac{\partial J(\theta)}{\partial\theta}
-= \frac{1}{m} X'*(h(\theta)-y) \tag{2}$$
+= \frac{1}{m} X'*(h(\theta)-y) \tag{3}$$
+
+**带正则化**
+
+$$\frac{\partial J(\theta)}{\partial\theta_j}
+= \frac{1}{m} \sum^m_{i=1} (h_\theta(x^{(i)}) - y^{(i)})x^{(i)}_j + \frac{\lambda}{m}\theta_j \tag{4}$$
+
+$$\frac{\partial J(\theta)}{\partial\theta_j}
+= \frac{1}{m} X(:,j)'*(h(\theta)-y) + \frac{\lambda}{m}\theta_j\tag{5}$$
+
+$$\frac{\partial J(\theta)}{\partial\theta}
+= \frac{1}{m} X'*(h(\theta)-y) + \frac{\lambda}{m}\theta\tag{6}$$
+
+
+只要记住损失函数方程，基本就能推出所有方程。
+
+
+### Octave 补充
+
+```matlab
+%  Set options for fminunc
+options = optimset('GradObj', 'on', 'MaxIter', 400);
+
+%  Run fminunc to obtain the optimal theta
+%  This function will return theta and the cost 
+[theta, cost] = ...
+	fminunc(@(t)(costFunction(t, X, y)), initial_theta, options);
+	
+@(t)(costFunction(t, X, y)) % 封装了 costFunction(t, X, y)
+```
+
+
+
 
 ## 逻辑回归
 
