@@ -119,11 +119,104 @@ $\Sigma$协方差矩阵
 
 #### 9.2.2 基于内容推荐
 
+<img width="1267" alt="reco" src="https://user-images.githubusercontent.com/41643043/57002835-e504cc80-6bf4-11e9-8c6c-785b65fe0326.png">
+
+**基于内容的推荐(电影推荐系统)**
+- 把电影看做样本，然后对电影进行特征(爱情和动作)向量化，得到每部电影的样本值
+- 然后把用户打分当作label，进行线性回归训练，得到每个用户对应的特征权重
+- 根据用户的权重，对用户没有打分的电影进行预测
+- 根据预测打分进行推荐
+
+
+
+<img width="991" alt="prob_for" src="https://user-images.githubusercontent.com/41643043/57002838-e6ce9000-6bf4-11e9-838f-aa3282f26781.png">
+
+基本和线性回归类似
+- 最小化目标函数
+
+
+<img width="1155" alt="opt_gd" src="https://user-images.githubusercontent.com/41643043/57002841-e8985380-6bf4-11e9-992a-5eb09aecb225.png">
+
+对所有用户进行目标函数最小化
+- 并且进行梯度下降优化算法
 
 #### 9.2.3 协同过滤
 
+引入
+- 上面的电影特征值是人为选择的，需要花时间去看完电影
+- 如果人不知道的特征值怎么选
+
+
+
+**推荐系统**
+- 是根据电影样本的特征值 $x$，来计算用户的喜好(特征偏好)$\theta$
+
+**计算特征值**
+- 是根据用户的喜好(特征偏好) $\theta$ 来计算每个电影的特征值 $x$
+- 用户的特征偏好$\theta$，基本可以收集，用户会告诉网站，或者通过几部电影，已经计算出来了
+- 从多个用户的喜好特征，从而得到新电影的特征值
+
+<img width="1261" alt="example" src="https://user-images.githubusercontent.com/41643043/57003513-e389d300-6bf9-11e9-8e34-62785d74eaaf.png">
+
+**计算特征优化目标**
+
+<img width="1082" alt="co_alg" src="https://user-images.githubusercontent.com/41643043/57003258-e5eb2d80-6bf7-11e9-9326-ce2b648b83a3.png">
+
+**协同过滤**
+- 基于内容推荐
+- 基于计算特征
+
+<img width="1102" alt="col_alg2" src="https://user-images.githubusercontent.com/41643043/57003259-e71c5a80-6bf7-11e9-9dbb-852b2a2367ea.png">
+
 
 #### 9.2.4 协同过滤算法
+
+**优化目标**
+
+
+<img width="453" alt="opt" src="https://user-images.githubusercontent.com/41643043/57003943-f94cc780-6bfc-11e9-8f2e-2fd4e620bddd.png">
+
+
+<img width="463" alt="co_alg" src="https://user-images.githubusercontent.com/41643043/57003945-f9e55e00-6bfc-11e9-8df6-0c927e387c3e.png">
+
+
+#### 9.2.5 矢量化：低轶矩阵分解
+
+
+[机器学习——低秩矩阵分解中低秩的意义、矩阵填补、交叉验证](https://blog.csdn.net/manduner/article/details/80564414)
+
+
+低轶矩阵分解
+- 矩阵填补，自动填补某些缺失值
+
+
+<img width="445" alt="lr" src="https://user-images.githubusercontent.com/41643043/57004274-3cf50080-6c00-11e9-9539-6b31f5ab7385.png">
+
+
+
+相似商品推荐
+- 首先计算出所有商品的特征值
+- 计算两个商品的相似度 $||x^{(i)}-x^{(j)}||$
+- 选择最小的几个商品进行推荐
+
+<img width="504" alt="similar" src="https://user-images.githubusercontent.com/41643043/57004166-4a5dbb00-6bff-11e9-8d9e-e48009acc402.png">
+
+
+#### 9.2.6 实施细节：均值规范化
+
+用户初始化(冷启动)
+- 采用优化目标，可能使用户的喜好偏好 $\theta = [0\ 0]$
+- 对矩阵$Y$，对每行求平均，进行均值规范化，得到新的$Y$
+- 均值的意义，就是用来冷启动用户
+
+<img width="457" alt="m_norm" src="https://user-images.githubusercontent.com/41643043/57004442-99a4eb00-6c01-11e9-872d-c47dd82700c2.png">
+
+
+
+
+
+
+
 
 
 
