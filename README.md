@@ -1,4 +1,4 @@
-# Machine Learning Notes
+# Machine Learning Notes & Homework
 
 吴恩达大师的课程 [CS229: Stanford Machine Learning](https://www.coursera.org/learn/machine-learning/home/week)
 
@@ -54,3 +54,5 @@ github的markdown不支持公式, 安装下面的 chrome 安装插件，可以�
 [week11 Application Example: Photo OCR](https://github.com/rubust-ai/Stanford_Machine_Learning-Notes/blob/master/week11.md)
 
 
+
+[program homework](https://github.com/rubust-ai/CS229-Machine-Learning/tree/master/homework)
