@@ -88,20 +88,17 @@ options = optimset('GradObj', 'on', 'MaxIter', 400);
 
 
 
-## 逻辑回归
+## 3.1 逻辑回归
 
-#### 分类算法和表征
+### 3.1.1 分类算法和表征
 
-
-##### 引入：线性回归讲述如何做恶性肿瘤分类问题
+**引入：线性回归讲述如何做恶性肿瘤分类问题**
 
 - 以癌症分类开始，如果有异常点，会将线性回归的线拉偏，从而导致接近0.5的恶性肿瘤预测失败
 - 正常恶性肿瘤分类，其要求输出结果不是0，就是1
     - 但是如果采用线性回归假设函数，$h >> 1$ 或者$h << 0$，这样比较奇怪
 
-
-
-##### 逻辑回归模型
+**逻辑回归模型**
 
 引入假设函数希望 $0 \leq h_{\theta}(x) \leq 1$
 - $h_{\theta}(x) = g(\theta^Tx)=\frac{1}{1+e^{- \theta^Tx}}​$
@@ -110,7 +107,7 @@ options = optimset('GradObj', 'on', 'MaxIter', 400);
 
 
 
-##### 决策边界
+**决策边界**
 
 - $h_{\theta}(x) = g(\theta^Tx)$
     - $y = 1; \theta^Tx \geq 0$
@@ -135,7 +132,7 @@ options = optimset('GradObj', 'on', 'MaxIter', 400);
 
 
 
-##### log代价函数
+##### 交叉熵损失函数
 $$ cost(h_\theta(x),y)=\left\{
 \begin{aligned}
 -log(h_\theta(x));\ if\ y = 1 \\
