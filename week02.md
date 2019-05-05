@@ -84,6 +84,10 @@ $J(\theta)-Iterations$曲线
 #### 特征和多项式回归
 如果直线不能拟合，我们可以通过添加多项式进行拟合，比如改成二次，三次，或者平方根的形式等等
 
+#### 梯度下降矩阵化
+将参数更新向量化
+![](https://user-images.githubusercontent.com/41643043/55678730-245f3680-5931-11e9-91db-d487d4d5230a.png)
+
 
 &nbsp;
 ## 2.2 计算参数分析
@@ -107,7 +111,7 @@ octave中正规方程$(X^T X)^{-1}$不可逆
 - $pinv()$可以求一个伪逆矩阵，得到一个近似解，所以常用$pinv()$
 
 
-### Octave简明教程
+## 2.3 `Matlab` 简明教程
 
 ```matlab
 eye % 生成单位矩阵
@@ -145,13 +149,7 @@ max(A) % 筛选column 最大元素
 max(max(A)) %求矩阵最大
 sum(A,1)  %  sum column
 sum(A,2) % sum row
-
 ```
-
-#### 梯度下降矩阵化
-将参数更新向量化
-![](https://user-images.githubusercontent.com/41643043/55678730-245f3680-5931-11e9-91db-d487d4d5230a.png)
-
 
 ### 编程
 - octave的使用，作业题目是**梯度下降，参数更新**
