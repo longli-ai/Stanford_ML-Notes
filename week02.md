@@ -1,6 +1,6 @@
-## Week2
+# Week2
 
-### 迷惑
+## 迷惑
 
 [$h(x)= theta'*x 和 h(x) = X*theta 区别$](https://www.coursera.org/learn/machine-learning/supplement/SFKpu/programming-tips-from-mentors)
 
@@ -19,7 +19,7 @@ $h(x) = X*theta$
 
 &nbsp;
 
-### 多项式线性回归
+## 2.1 多项式线性回归
 
 
 
@@ -75,8 +75,8 @@ $J(\theta)-Iterations$曲线
 如果直线不能拟合，我们可以通过添加多项式进行拟合，比如改成二次，三次，或者平方根的形式等等
 
 
-
-### 计算参数分析
+&nbsp;
+## 2.2 计算参数分析
 
 #### 正规方程 Normal Equation
 - 定义：$\theta = (X^T X)^{-1}X^Ty$

@@ -65,7 +65,7 @@ Github 的 markdown 不支持数学公式, 安装下面的 chrome 安装 mathjax
     - 好的向量化实现，速度可能比sgd快
 
 
-#### 10.1.3 随机梯度下降收敛
+#### 10.1.3 随机梯度下降收敛调试
 
 调试随机梯度下降
 - 迭代的时候，每次对最后1000个样本进行进行本轮的求平均，能得到反馈曲线
@@ -83,7 +83,6 @@ Github 的 markdown 不支持数学公式, 安装下面的 chrome 安装 mathjax
 #### 10.2.1 在线学习
 
 预测点击率 $click\ through\ rate$
- 
 
 
 
@@ -92,7 +91,8 @@ Github 的 markdown 不支持数学公式, 安装下面的 chrome 安装 mathjax
 
 
 
-#### 10.2.2 Map-Reduce和数据平行处理
+
+#### 10.2.2 Map-Reduce和数据平行运算
 
 
 批量梯度下降
