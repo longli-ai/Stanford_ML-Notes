@@ -148,7 +148,7 @@ sum(A,2) % sum row
 
 ```
 
-#### 向量化
+#### 梯度下降矩阵化
 将参数更新向量化
 ![](https://user-images.githubusercontent.com/41643043/55678730-245f3680-5931-11e9-91db-d487d4d5230a.png)
 
