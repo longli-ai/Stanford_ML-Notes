@@ -1,5 +1,6 @@
 ## Week9
 
+本周内容：异常检测，推荐系统
 
 ### GitHub公式显示插件
 github 的 markdown 不支持公式, 安装下面的 chrome 安装插件，可以正常看 markdown 文中的公式，当然前提是你需要过墙。

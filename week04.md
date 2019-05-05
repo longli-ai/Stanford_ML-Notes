@@ -1,7 +1,8 @@
-## Week4
+# Week4
 
+本周内容：神经网络-表征
 
-### 神经网络表征
+## 4.1 神经网络表征
 
 
 
@@ -47,7 +48,7 @@
 ![](https://user-images.githubusercontent.com/41643043/56087410-66422c80-5e9d-11e9-9575-f7c992645a81.png)
 
 
-**前向传播** forward propagation
+**前向传播** `forward propagation`
 - sigmoid压缩值z的定义
     - 上标和activation一样，但是z代表输入前，a代表输出
     - 即使通过激励g，但a和z的维度相同

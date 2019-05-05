@@ -1,6 +1,8 @@
 # Week7
 
-## 7.1 Support Vector Machines
+本周内容：支持向量机
+
+## 7.1 支持向量机
 
 
 优化目标

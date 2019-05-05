@@ -1,5 +1,7 @@
 ## Week10
 
+本周内容：大数据机器学习，前沿话题
+
 ### GitHub公式显示插件
 Github 的 markdown 不支持数学公式, 安装下面的 chrome 安装 mathjax 插件，可以正常看 markdown 文中的数学公式，当然前提是你需要过墙，才能安装。
 

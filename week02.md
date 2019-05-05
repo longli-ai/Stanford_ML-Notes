@@ -1,5 +1,7 @@
 # Week2
 
+本周内容：多项式线性回归，计算参数分析，`Matlab` 简明教程
+
 ## 迷惑
 
 [$h(x)= theta'*x 和 h(x) = X*theta 区别$](https://www.coursera.org/learn/machine-learning/supplement/SFKpu/programming-tips-from-mentors)

@@ -1,5 +1,6 @@
 ## Week8
 
+本周内容：无监督学习，聚类和降维
 
 ### GitHub公式显示插件
 github 的 markdown 不支持公式, 安装下面的 chrome 安装插件，可以正常看 markdown 文中的公式，当然前提是你需要过墙。
