@@ -23,23 +23,33 @@ $h(x) = X*theta$
 
 
 
-#### 多维特征
+### 多维特征
 
-假设函数 
-- 常规写法 
+##### 假设函数
+ 
+两种非矩阵写法 
+
 $$h_\theta(x) = \theta_0x_0+\theta_1x_1+…+\theta_nx_n$$
 $$h_\theta(x) = \theta^Tx^{(i)};\ i = 1..m$$
 
-- 矢量写法 
-$$h_\theta(x) = X\theta$$
+矢量写法
+
+$$h_\theta(x) = X*\theta$$
 
 
-代价函数
--  常规写法 $$J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2$$
--  矢量写法 $$J(\theta) = \frac{1}{2m}(X\theta-y)^T(X\theta-y)$$
+##### 代价函数
 
-#### 多元参数的梯度下降
-多元参数和week1的梯度下降一样，将$x_0 = 1$带入week1即可
+常规写法
+ 
+$$J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2$$
+
+矢量写法 
+
+$$J(\theta) = \frac{1}{2m}(X\theta-y)^T(X\theta-y)$$
+
+&nbsp;
+#### 梯度下降算法
+
 $repeat\ until\ covergence\ \{$
     $\theta_j := \theta_j -\alpha \frac{\partial}{\partial \theta_j}J(\theta_j); for\ j\ := 0...n$
 $\}$
