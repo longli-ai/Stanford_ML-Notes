@@ -4,13 +4,13 @@
 
 
 
-
+&nbsp;
 ## 插件
 github的markdown不支持公式, 安装下面的 chrome 安装插件，可以正常看markdown的公式
 
 [github with mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
 
-
+&nbsp;
 ## 笔记
 
 
@@ -55,12 +55,13 @@ github的markdown不支持公式, 安装下面的 chrome 安装插件，可以�
 [week11 Application Example: Photo OCR](https://github.com/rubust-ai/Machine_Learning/blob/master/week11.md)
 
 
-
-### 作业
+&nbsp;
+## 作业
 
 [Homework](https://github.com/rubust-ai/Machine_Learning/tree/master/homework)
 
 
-### QUIZ
+&nbsp;
+## QUIZ
 
 目前不公开了，以后会的。
