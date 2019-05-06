@@ -9,7 +9,7 @@ Github 的 markdown 不支持数学公式, 安装下面的 chrome 安装 mathjax
 
 [Github with mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
 
-
+&nbsp;
 ## 11.1 照片光学字符识别 Photo OCR
 
 
@@ -107,6 +107,7 @@ pipeline上的组块分析
 ![](https://user-images.githubusercontent.com/41643043/56888179-fd1a0600-6aa5-11e9-8f73-a1d9aa044063.png)
 
 
+&nbsp;
 ### 11.2 课程总结
 
 ![](https://user-images.githubusercontent.com/41643043/56889535-2e480580-6aa9-11e9-8641-7c2b02047e8e.png)
