@@ -2,25 +2,25 @@
 
 本周内容：多项式线性回归，计算参数分析，`Matlab` 简明教程
 
-## 迷惑
+## 补充
+
+`Mentor Tips`
 
 [$h(x)= theta'*x 和 h(x) = X*theta 区别$](https://www.coursera.org/learn/machine-learning/supplement/SFKpu/programming-tips-from-mentors)
 
-课程的mentor给了一些建议，后面写作业时候，经常混淆，需要搞明白
+后面写编程作业时候，会经常混淆，需要目前搞明白。
 
 课程中采用的都是列向量，需要搞明白含义 $theta, x, X$
-$h(x) = theta'*x$
-- x代表单样本
-    - x的维度是$n*1$
-    - h是标量
 
-$h(x) = X*theta$
-- X作为所有训练样本的矩阵，每个样本作为一行，特征作为列
-    - X的维度是$m*n$，m是样本数量，n是特征维度
-    - h的维度是$m*1$
+$$h(x) = \theta'*x$$
+
+x代表单样本，x的维度是$n*1$，此时h是标量
+
+$$h(x) = X*\theta$$
+
+X作为所有训练样本的矩阵，每个样本作为一行，特征作为列。X的维度是$m*n$，m是样本数量，n是特征维度，h的维度是$m*1$
 
 &nbsp;
-
 ## 2.1 多项式线性回归
 
 
@@ -34,7 +34,7 @@ $h(x) = X*theta$
 $$h_\theta(x) = \theta_0x_0+\theta_1x_1+…+\theta_nx_n$$
 $$h_\theta(x) = \theta^Tx^{(i)};\ i = 1..m$$
 
-矢量写法
+矩阵写法
 
 $$h_\theta(x) = X*\theta$$
 
@@ -45,7 +45,7 @@ $$h_\theta(x) = X*\theta$$
  
 $$J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2$$
 
-矢量写法 
+矩阵写法 
 
 $$J(\theta) = \frac{1}{2m}(X\theta-y)^T(X\theta-y)$$
 
