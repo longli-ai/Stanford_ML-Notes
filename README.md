@@ -1,8 +1,9 @@
-# Machine Learning 笔记
+# Machine Learning
 
 吴恩达大师的课程 [Machine Learning](https://www.coursera.org/learn/machine-learning/home/week)
 
 
+会随着复习，进行进一步更新，比如，组织结构化和逻辑化，符号美观，并且去掉一些图片。
 
 &nbsp;
 ## 插件
