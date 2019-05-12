@@ -5,9 +5,10 @@
 
 会随着复习，进行进一步更新，比如，组织结构化和逻辑化，符号美观，并且去掉一些图片。
 
+
 &nbsp;
 ## 插件
-github的markdown不支持公式, 安装下面的 chrome 安装插件，可以正常看markdown的公式
+`github` 的 `markdown` 不支持公式, 安装下面的 `chrome` 安装插件，可以正常看`markdown` 的公式
 
 [github with mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
 
