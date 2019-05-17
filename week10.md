@@ -1,4 +1,4 @@
-## Week10
+# Week10
 
 本周内容：大数据机器学习，前沿话题
 
@@ -9,7 +9,7 @@ Github 的 markdown 不支持数学公式, 安装下面的 chrome 安装 mathjax
 [Github with mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
 
 
-### 10.1 大数据梯度下降
+## 10.1 大数据梯度下降
 
 
 #### 10.1.1 大数据学习
@@ -80,7 +80,7 @@ Github 的 markdown 不支持数学公式, 安装下面的 chrome 安装 mathjax
 - 图4结果已经发散，需要降低学习率，使代价函数下降
 
 
-### 10.2 前沿话题
+## 10.2 前沿话题
 
 #### 10.2.1 在线学习
 
