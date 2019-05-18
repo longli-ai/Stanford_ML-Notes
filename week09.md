@@ -1,23 +1,18 @@
-## Week9
+# Week9
 
 本周内容：异常检测，推荐系统
 
-### GitHub公式显示插件
-github 的 markdown 不支持公式, 安装下面的 chrome 安装插件，可以正常看 markdown 文中的公式，当然前提是你需要过墙。
 
-[github with mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
+## 异常检测
 
+### 问题动机
 
-### 9.1 异常检测
-
-问题动机
 - 偏斜类很严重，基本上没多少正样本可以获取
 - 转向于采用寻找负样本的特征
 - 然后把正样本作为异常点进行处理
 
 
-
-#### 9.1.1 异常检测
+### 异常检测
 
 定义
 - 经常用在无监督学习里，但是和有监督学习又很像
@@ -29,7 +24,7 @@ github 的 markdown 不支持公式, 安装下面的 chrome 安装插件，可�
 - 数据中心监控电脑
 $p(x)< e$
 
-#### 9.1.2 高斯分布
+### 高斯分布
 
 公式
 
