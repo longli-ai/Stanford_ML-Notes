@@ -6,6 +6,8 @@
 会随着复习，进行进一步更新，比如，组织结构化和逻辑化，符号美观，并且去掉一些图片。
 
 
+课程不允许 `homework` 和 `quiz` 代码放入 `github` ，所以我将作业私有化了。
+
 &nbsp;
 ## 插件
 `github` 的 `markdown` 不支持公式, 安装下面的 `chrome` 安装插件，可以正常看`markdown` 的公式
@@ -60,10 +62,7 @@
 &nbsp;
 ## 作业
 
-[Homework](https://github.com/rubust-ai/Machine-Learning/tree/master/homework)
 
 
 &nbsp;
 ## QUIZ
-
-目前不公开了，以后会的。
